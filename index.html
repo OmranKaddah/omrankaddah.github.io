@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omran Kaddah's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .header-bg {
+      background-image: url('background.jpg'); /* Replace with your 1049x520 background image URL */
+      background-size: cover;
+      background-position: center; /* Center the image */
+      position: relative;
+      height: 300px; /* Increased header height */
+    }
+    .header-bg::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for text readability */
+      z-index: 1;
+    }
+    .header-content {
+      position: relative;
+      z-index: 2;
+      padding-top: 60px; /* Adjust padding to center content vertically */
+    }
+    .corner-image {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 3;
+      border-radius: 15px; /* Rounded edges */
+    }
+    .social-links a {
+      margin: 0 10px;
+    }
+    .social-links svg {
+      width: 24px;
+      height: 24px;
+      fill: white;
+      transition: fill 0.3s;
+    }
+    .social-links svg:hover {
+      fill: #0077B5; /* LinkedIn blue on hover */
+    }
+    .social-links .github-logo:hover {
+      fill: #333; /* GitHub dark gray on hover */
+    }
+  </style>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- Vertical Picture Placeholder (Top-Left Corner) -->
+  <img src="Omran-Kadah.jpg" alt="Placeholder for Omran Kaddah's full-body picture" class="corner-image w-40 h-auto">
+
+  <!-- Header -->
+  <header class="header-bg text-white">
+    <div class="container mx-auto text-center header-content">
+      <h1 class="text-5xl font-bold text-white drop-shadow-md">Omran Kaddah</h1>
+      <p class="text-xl mt-2 text-white drop-shadow-md">Computer and Data Scientist</p>
+      <div class="social-links mt-4">
+        <a href="https://www.linkedin.com/in/omran-kadah-41b784b3/" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-1.337-.255-2.453-1.763-2.453-1.005 0-1.591.671-1.853 1.316-1.95-.966-2.5-1.316-2.5-1.316-.096-.024-.192-.048-.288-.072-.096.024-.192.048-.288.072 0 0-1.389 1.225-2.5 1.316-.262-.645-.848-1.316-1.853-1.316-1.508 0-1.763 1.116-1.763 2.453v5.604h-3v-11h3v1.765c.384-.576 1.037-1.316 2.475-1.316 1.804 0 3.525 1.176 3.525 3.294v5.257h3v-11h3v11z"/></svg>
+        </a>
+        <a href="https://github.com/OmranKaddah" target="_blank" aria-label="GitHub" class="github-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.744.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23a11.509 11.509 0 0 1 6.029 0c2.292-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.768.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.387 0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 text-white py-4 sticky top-0">
+    <div class="container mx-auto flex justify-center space-x-6">
+      <a href="#about" class="hover:text-blue-300">About Me</a>
+      <a href="#projects" class="hover:text-blue-300">Projects</a>
+      <a href="#resume" class="hover:text-blue-300">Résumé</a>
+    </div>
+  </nav>
+
+  <!-- About Section (Placeholder) -->
+  <section id="about" class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+    <p class="text-lg text-gray-700 text-center">
+        Hello! ألسلام غليكم! Servus! Merhaba! I'm Omran Kaddah, a passionate Computer Scientist and Data Scientist based in Munich, Germany.
+      I have 5 years of professional expereince in Machine Learning and almost 4 years as Data Scientist. I have been programming for more than 14 years, starting with C/C++ in late high school. Over the years, I have explored various programming languages and technologies, including Python, Julia, and C#. My passion for problem-solving and analytical thinking has driven me to continuously learn and adapt to new challenges.
+      Even in my free time, I enjoy engaging my mind with mentally challenging tasks, particularly those involving problem-solving and analytical or algorithmic thinking. This makes such challenges a natural fit in my professional work as well. Throughout the past few years, I have gained significant experience in Machine Learning, AI Engineering, data analysis and engineering at Unite. During my Master's at TU Munich, I specialized in Computer vision and Machine Learning, focusing on clustering algorithms applied to real-world and graph data during my thesis. Other than that, I possess extensive knowledge in various fields of Computer Science.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Ze Neuz Lettah Aye Gendt</h3>
+        <p class="text-gray-600 mb-4">
+          A Python-based agent workflow that automates the curation of newsletters by scouring the internet for the latest news, tutorials, blog posts, and academic papers on any specified topic.
+        </p>
+        <a href="https://github.com/OmranKaddah/Ze-Neuz-lettah-Aye-gendt" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Community Detection in Graphs</h3>
+        <p class="text-gray-600 mb-4">
+          This repository implements and compares multiple graph neural network approaches for community detection, including Vecoder with modularity loss, hierarchical pooling methods (DiffPool, Min-cut), and overlapping community detection using AGM. Experiments across multiple datasets showed that Vecoder-based methods outperformed traditional pooling approaches, achieving NMI scores of 0-0.2 compared to near-zero performance from hierarchical clustering methods.
+        </p>
+        <a href="https://github.com/OmranKaddah/comm_det_exps" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Multi-Object Tracking in Driving Scene</h3>
+        <p class="text-gray-600 mb-4">
+          A C++ project focused on multi-object tracking in driving scenarios, designed for robust real-time performance in complex environments.
+        </p>
+        <a href="https://github.com/OmranKaddah/Multi-Object-Tracking-in-The-Driving-Scene" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Discrete Non-Uniform Fourier Transform with Deep Learning</h3>
+        <p class="text-gray-600 mb-4">
+          A Python project integrating deep learning techniques with Discrete Non-Uniform Fourier Transform for advanced signal processing.
+        </p>
+        <a href="https://github.com/OmranKaddah/Discrete-Non-Uniform-Fourier-Transform-with-Deep-Learning" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">Disentangled Representation Learning</h3>
+        <p class="text-gray-600 mb-4">
+          A Python project exploring disentangled representation learning to separate underlying factors of variation in data.
+        </p>
+        <a href="https://github.com/OmranKaddah/Disentangled-Representation-Learning" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
+
+      <div class="bg-white p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-semibold mb-2">6DoF Tracking VR Headset</h3>
+        <p class="text-gray-600 mb-4">
+          A C++ project implementing 6 Degrees of Freedom (6DoF) tracking for a VR headset by solving the Perspective-n-Points problem using multiple distinctive markers.
+        </p>
+        <a href="https://github.com/OmranKaddah/6DoF-Tacking-VR-Headset" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- resume Section -->
+  <section id="resume" class="container mx-auto py-12">
+    <h2 class="text-3xl font-bold text-center mb-6">Résumé</h2>
+    <div class="bg-white p-6 rounded-lg shadow-md mx-auto max-w-4xl">
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">WORK EXPERIENCE</h2>
+        
+        <div class="mb-4">
+          <h3 class="font-medium">Data Scientist at Unite Procurement Deutschland AG, Munich, Germany - 2021 </h3>
+          <ul class="list-disc pl-6 text-gray-700">
+            <li>Led the development and deployment of machine learning models by architecting scalable infrastructure, ensuring production readiness, and implementing continuous monitoring (MLOps). My focus was on clustering algorithms for article features and duplicate detection. These models are integral to supplier comparison, standardised article patching, and margin calculation, playing a key role in the company's B2B online platform and revenue generation.</li>
+            <li>Designed and implemented an RAG system for the company's Confluence knowledge base, improving information retrieval and accessibility, as well as an agentic system that included a fine-tuned LLM to assist customer support.</li>
+            <li>Managed end-to-end data engineering and DevOps tasks within a robust data architecture framework, including data ingestion, cleansing, orchestration, and database design and management. Contributed to designing and implementing data pipelines and models to deliver clean, conformed, and machine-learning-ready data for advanced analytics and business intelligence. Also played a key role in migrating computing and storage infrastructure to the cloud.</li>
+            <li>Conducted data analysis and visualisation in R and Julia to evaluate margin algorithm performance and analyse supplier product sales. Most of the communication was in German.</li>
+          </ul>
+        </div>
+        
+        <div class="mb-4">
+          <h3 class="font-medium">Research Assistant and Master Thesis at Mercateo AG, Munich, Germany - 2020 </h3>
+          <ul class="list-disc pl-6 text-gray-700">
+            <li>Contributed to research on Disentangled Representation Learning, Representation Learning, and Community Detection in Graphs. Responsibilities included collaborating with fellow researchers to analyse and review relevant literature, testing various baselines and codebases, proposing and implementing models using PyTorch, and developing tools for both qualitative and quantitative model evaluation.</li>
+            <li>Publication: Unsupervised learning of joint embeddings for node representation and community detection. In Machine Learning and Knowledge Discovery in Databases. Research Track: European Conference, ECML PKDD 2021.</li>
+          </ul>
+        </div>
+        
+        <div class="mb-4">
+          <h3 class="font-medium">Teaching Assistant at Technical University of Munich, Munich, Germany - 2020</h3>
+          <ul class="list-disc pl-6 text-gray-700">
+            <li>Programmed assignments for students. Conducted exercise sessions for the courses Machine Learning & Programming in C.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">EDUCATION</h2>
+        
+        <div class="mb-4">
+          <h3 class="font-medium">MSc Informatics: Technical University of Munich, Grade 1.6:1.0 - 2018 - 2021</h3>
+          <ul class="list-disc pl-6 text-gray-700">
+            <li>With specialisation in Machine learning and Computer Vision and Guided Research in the topic of Multi-object Tracking in The Driving Scene.</li>
+            <li>Thesis: Community Detection in Graphs. Grade 1.0.</li>
+          </ul>
+        </div>
+        
+        <div class="mb-4">
+          <h3 class="font-medium">BSc Computer Engineering: Bahçeşehir University, GPA 3.57:4.0 - 2013 - 2021</h3>
+          <ul class="list-disc pl-6 text-gray-700">
+            <li>Completed Computer Science and Software Engineering courses. Capstone Project: VR headset tracker. And an exchange semester at TU-Braunschweig in the winter of 2016-2017. Salutatorian of class 2013.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">SKILLS</h2>
+        <p class="text-gray-700">From Unite Tech Stack: Julia (DataFrames.jl), Python (Tensorflow, boto, Pandas, DuckDB, numpy, scikit-learn, langchain, LangGraph, huggingface, peft, transformers, spaCy, PydanticAI), MCP, SQL, aws(SageMaker, Bedrock, ECS/2, Athena, CodePipeline, CloudFormation Templates & cdk -IaC), Terraform, dagster, Gitlab CI/CD, Docker, VectorDB (aws OpenSearch, pinecone), Java and Maven.</p>
+        <p class="text-gray-700 mt-4">Other: C/C++, PyTorch, OpenCV, FastAPI</p>
+      </section>
+
+      <section class="mb-8">
+        <h2 class="text-xl font-semibold mb-4">Languages</h2>
+        <p class="text-gray-700">Arabic, English, German, and Turkish (Basic).</p>
+      </section>
+
+      <section>
+        <h2 class="text-xl font-semibold mb-4">Hobbies</h2>
+        <p class="text-gray-700">Guitar, Classical Music, Bouldering, Podcasts, Pub quizzes, and Hiking.</p>
+      </section>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Omran Kaddah. All rights reserved, hopefully.</p>
+      <p class="mt-2">
+        <a href="https://github.com/OmranKaddah" target="_blank" class="text-blue-300 hover:underline">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Smooth Scroll JavaScript -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
